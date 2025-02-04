@@ -12,29 +12,30 @@ cards.forEach(card => {
         card.style.transform = "scale(1)";
     });
 });
-navItems.forEach(item => {
-    item.addEventListener("mouseover", () => {
-        item.style.backgroundColor = 'yellow';
-        item.style.color = 'black';
-        item.style.padding = '7px 20px';
-        item.style.borderRadius = '15px';
-        item.style.transition = 'all 0.3s ease';
-        item.style.cursor = 'pointer';
-    });
+// navItems.forEach(item => {
+//     item.addEventListener("mouseover", () => {
+//         item.style.backgroundColor = 'yellow';
+//         item.style.color = 'black';
+//         item.style.padding = '7px 20px';
+//         item.style.borderRadius = '15px';
+//         item.style.transition = 'all 0.3s ease';
+//         item.style.cursor = 'pointer';
+//     });
 
     // Remove hover effect when mouse leaves
-    item.addEventListener("mouseout", () => {
-        item.style.backgroundColor = '';
-        item.style.color = '';
-        item.style.padding = '';
-        item.style.borderRadius = '';
-        item.style.transition = '';
-    });
-});
-document.querySelectorAll("nav h3").forEach((item, index) =>
-    item.onclick = () => 
-        document.querySelectorAll("main > div")[index].scrollIntoView({ behavior: "smooth" })
-);
+
+//     item.addEventListener("mouseout", () => {
+//         item.style.backgroundColor = '';
+//         item.style.color = '';
+//         item.style.padding = '';
+//         item.style.borderRadius = '';
+//         item.style.transition = '';
+//     });
+// });
+// document.querySelectorAll("nav h3").forEach((item, index) =>
+//     item.onclick = () => 
+//         document.querySelectorAll("main > div")[index].scrollIntoView({ behavior: "smooth" })
+// );
 
 // Function to check viewport
 function isInViewport(element) {

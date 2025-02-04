@@ -47,12 +47,18 @@ nav {
     display: flex;
     margin-left: auto;
     align-items: center;
+    margin-right: 2em;
 }
 
 .active {
-    padding: 0em 1em 0em 1em;
-    /* padding-top: 0; */
+    margin-left:2em;
+    padding: 0em 0em 0em 0em;
     color: white;
+}
+
+.active:hover{
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.1s;
 }
 
 /* Main */
@@ -243,4 +249,17 @@ position: relative; */
     text-align: center;
     width: 50%;
     color: white;
+}
+
+
+/* fade-in class for the fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 3s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

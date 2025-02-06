@@ -10,6 +10,8 @@ html, body {
     width: 100%;
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
+
 }
 
 /* Set background on body and ensure it covers the entire screen */
@@ -48,6 +50,10 @@ nav {
     margin-left: auto;
     align-items: center;
     margin-right: 2em;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 .active {
@@ -183,6 +189,7 @@ position: relative; */
 /* page 3 */
 
 .page-3 {
+    padding-top: 2em;
     height: 100vh;
     width: 100%;
 }

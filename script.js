@@ -35,7 +35,7 @@ cards.forEach(card => {
 document.querySelectorAll("nav h3").forEach((item, index) =>
     item.onclick = () => 
         document.querySelectorAll("main > div")[index].scrollIntoView({ behavior: "smooth" })
-// );
+);
 
 // Function to check viewport
 function isInViewport(element) {
